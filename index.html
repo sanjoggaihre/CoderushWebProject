@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+<body>
+    <script
+      src="https://kit.fontawesome.com/575b610ba3.js"
+      crossorigin="anonymous"
+    ></script>
+    <nav id="nav-id">
+        <div class="logo">
+          <img src="logo.png" alt="" />
+          <h2>Eduford</h2>
+        </div>
+        <div id="hello">
+          <i class="fa fa-times" id="cross" onclick="hide()"></i>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Course</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" id="bar" onclick="show()"></i>
+      </nav>
+    <div class="makingButton">
+    <a href="#" class="btn-primary" onclick="dim();">Click Here to Dim</a>
+    <div id="toggle_div">
+        <p></p>
+        <a href="" class="btn-primary" onclick="revert_dim();">Revert Dim</a>
+    </div>
+    </div>
+    <h3 style="text-align: center;"> To see navbar animation and setting icon reduce width to 650px</h3>
+
+    <div class="container">
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 1</h3>
+            <p>Description of folder 1</p>
+        </div>
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 2</h3>
+            <p>Description of folder 2</p>
+        </div>
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 3</h3>
+            <p>Description of folder 3</p>
+        </div>
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 4</h3>
+            <p>Description of folder 4</p>
+        </div>
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 5</h3>
+            <p>Description of folder 5</p>
+        </div>
+        <div class="item">
+            <i class="folder-icon fa fa-folder"></i>
+            <br>
+            <h3>Folder 6</h3>
+            <p>Description of folder 6</p>
+        </div>
+    </div>
+
+    <script>
+        var small = document.getElementById("hello");
+        function hide() {
+          small.style.right = "-200px";
+        //   small.style.display = "none";
+        }
+        function show() {
+          small.style.right = "-10px";
+          small.style.display = "block";
+        }
+        function dim() {
+            document.getElementById("toggle_div").style.display="block";
+        }
+        function revert_dim() {
+            document.getElementById("toggle_div").style.display="none";
+        }
+      </script>
+</body>
+</html>
